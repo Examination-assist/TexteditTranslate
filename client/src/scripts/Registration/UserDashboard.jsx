@@ -8,7 +8,7 @@ export default class UserDashboard extends Component {
 	UPLOAD_ENDPOINT = SERVER
 	constructor() {
 		super()
-		this.state = { data: [], name: 'Aaryan' }
+		this.state = { data: [], name: '' }
 	}
 	async componentDidMount() {
 		const result = await axios.post(

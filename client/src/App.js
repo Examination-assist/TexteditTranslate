@@ -34,7 +34,7 @@ class App extends React.Component {
 			<div className='App'>
 				<Router>
 					<Switch>
-						<Route path='/link'>
+						<Route path='/' exact>
 						
 							<Link to='/table'>Table</Link>
 							<br/><Link to='/register'>Register</Link>
@@ -62,6 +62,7 @@ class App extends React.Component {
 						<Route exact path='/'>
 							<Dashboard></Dashboard>
 						</Route>
+							
 						<Route exact path='/table'>
 							<Table></Table>
 						</Route>
@@ -70,7 +71,7 @@ class App extends React.Component {
 						<Route path='/login' component={Login}></Route>
 						<Route
 							path='/loginTranslator'
-							component={LoginTranslator}
+							component={Login}
 						></Route>
 						<Route path='/document' component={Document}></Route>
 						<Route path='/store_document' component={Store}></Route>
