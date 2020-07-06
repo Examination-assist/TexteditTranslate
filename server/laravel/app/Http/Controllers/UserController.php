@@ -53,7 +53,7 @@ class UserController extends Controller
         ]);
         // Log::info();
         $type_id = UserType::where('type', $validated['user_type'])->first()->type_id;
-        Log::info($type_id);
+        // Log::info($type_id);
 
         $user = new User;
 
@@ -68,7 +68,7 @@ class UserController extends Controller
 
         $user->course_name = $request->course_name;
 
-        Log::info($user);
+        // Log::info($user);
         $user->save();
 
         return response()->json(['user' => '']);

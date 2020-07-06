@@ -33,7 +33,7 @@ class TranslateController extends Controller
     function update_lines(Request $request)
     {
         $validated=$request->validate(['translate'=>'required']);
-        Log::info($request);
+        // Log::info($request);
 
         for ($i=0; $i < count($request->translate); $i++) { 
             $elem = $request->translate[$i];
